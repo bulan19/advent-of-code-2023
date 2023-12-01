@@ -5,7 +5,10 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": false,
-    "outDir": "dist"
+    "outDir": "dist",
+    "lib": [
+      "ES2021.String"
+    ]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "src/scripts/**/*"]

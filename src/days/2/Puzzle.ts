@@ -12,13 +12,7 @@ type Game = {
   sets: Cube[][];
 };
 
-const bag: Key = {
-  red: 12,
-  green: 13,
-  blue: 14,
-};
-
-const play = (games: Game[]): number => {
+const play = (games: Game[], bag: Key): number => {
   return games
     .map((game) => {
       for (let set of game.sets) {
@@ -70,8 +64,13 @@ const load = (input: string): Game[] => {
 };
 
 const first = (input: string) => {
+  const bag: Key = {
+    red: 12,
+    green: 13,
+    blue: 14,
+  };
   const games: Game[] = load(input);
-  const result = play(games);
+  const result = play(games, bag);
   return result.toString();
 };
 

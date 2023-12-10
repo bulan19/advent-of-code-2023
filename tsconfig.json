@@ -8,7 +8,8 @@
     "outDir": "dist",
     "lib": [
       "ES2021.String"
-    ]
+    ],
+    "target": "ES6"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "src/scripts/**/*"]
